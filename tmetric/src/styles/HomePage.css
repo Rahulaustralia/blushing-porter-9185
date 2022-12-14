@@ -1,0 +1,30 @@
+.Rpc1{
+    background-color: #fff0b8;
+    width: 100%;
+    height: auto;  
+}
+
+.RPhomemain{
+   /* position: relative;  */
+   /* padding-top: 70px; */
+   /* margin-top: 10px; */
+}
+
+.Rphomeheading{
+   padding-left: 70px;
+   padding-top: 60px;
+   
+}
+
+.RPhomeimage1{
+    display: flex;
+    gap: 63px;
+    padding: 25px;
+}
+
+.RPhometest{
+    padding-left: 70px;
+    margin-top: 26px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
