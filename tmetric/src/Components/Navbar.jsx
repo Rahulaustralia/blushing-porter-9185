@@ -23,7 +23,8 @@ import {FaCartPlus} from "react-icons/fa"
 import {Link as RouterLink} from "react-router-dom";
 import image from "../Images/logo.png"
 import "../styles/Navbar.css"
-import ChevronDownIcon from 'react-chevron'
+import ChevronDownIcon from 'react-chevron';
+import { useAuth0 } from "@auth0/auth0-react";
 
 const NavLink = ({ children }) => (
   <Link
@@ -42,6 +43,8 @@ const NavLink = ({ children }) => (
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { loginWithRedirect,isAuthenticated, logout,user } = useAuth0();
+
   return (
     <>
       <Box className='RPnavbar' bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
@@ -97,16 +100,27 @@ export default function Navbar() {
   
           </div>
           
-          <Flex alignItems={'center'}>
+          <Flex alignItems={'center'} gap="15px">
           {/* <FaCartPlus size={"30"}/> */}
-
-          <RouterLink to="/login"> 
-          <Button> Log In</Button>
+          {isAuthenticated && <p>Welcome:- {user.name} </p>}
+          {isAuthenticated ? 
+            <RouterLink to="/login"> 
+          <button className='RPsignupbuttom' onClick={() => logout({ returnTo: window.location.origin })}>
+      Log Out
+    </button>
           </RouterLink>
+          :(
+            <RouterLink to="/login"> 
+            <button className='RPsignupbuttom' onClick={() => loginWithRedirect()}>Log In</button>
+            </RouterLink>
+          )}
+         
+  
+          
 
-          <RouterLink to="/register">
+          {/* <RouterLink to="/register">
           <Button className='RPsignupbuttom'> Sign Up </Button>
-          </RouterLink>
+          </RouterLink> */}
           
            
             <Stack direction={'row'} spacing={7}>
