@@ -16,12 +16,14 @@ import {
   Stack,
   useColorMode,
   Center,
+  
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import {FaCartPlus} from "react-icons/fa"
 import {Link as RouterLink} from "react-router-dom";
 import image from "../Images/logo.png"
 import "../styles/Navbar.css"
+import ChevronDownIcon from 'react-chevron'
 
 const NavLink = ({ children }) => (
   <Link
@@ -44,13 +46,43 @@ export default function Navbar() {
     <>
       <Box className='RPnavbar' bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Box> <img src={image} alt="image" 
-           width="150px"
-          /> </Box>
+          <Box> 
           <RouterLink to="/"> 
-          <Button> Home</Button>
+          <Button>  <img src={image} alt="image" width="150px"/>   </Button>
           </RouterLink>
+           
+          </Box>
           
+          <div>  
+          <Menu>
+           <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+            Why TMetric
+          </MenuButton>
+          <MenuList>
+          <MenuItem>Download</MenuItem>
+          <MenuItem>Create a Copy</MenuItem>
+          <MenuItem>Mark as Draft</MenuItem>
+          <MenuDivider />
+          <MenuItem>Delete</MenuItem>
+          <MenuItem>Attend a Workshop</MenuItem>
+          </MenuList>
+
+          
+          </Menu>
+
+          <Menu>
+           <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+            Apps & Integrations
+          </MenuButton>
+          <MenuList>
+          <MenuItem>Download</MenuItem>
+          <MenuItem>Create a Copy</MenuItem>
+          <MenuItem>Mark as Draft</MenuItem>
+          <MenuItem>Delete</MenuItem>
+          <MenuItem>Attend a Workshop</MenuItem>
+          </MenuList>
+          </Menu>
+
           <RouterLink to="/blog"> 
           <Button> Blog</Button>
           </RouterLink>
@@ -63,16 +95,17 @@ export default function Navbar() {
           <Button> Support</Button>
           </RouterLink>
   
+          </div>
           
           <Flex alignItems={'center'}>
-          <FaCartPlus size={"30"}/>
+          {/* <FaCartPlus size={"30"}/> */}
 
           <RouterLink to="/login"> 
-          <Button> Login</Button>
+          <Button> Log In</Button>
           </RouterLink>
 
           <RouterLink to="/register">
-          <Button> Register </Button>
+          <Button className='RPsignupbuttom'> Sign Up </Button>
           </RouterLink>
           
            
