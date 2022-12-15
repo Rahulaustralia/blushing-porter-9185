@@ -1,0 +1,17 @@
+.RPpricingh{
+    text-align: center;
+    background-color: #e8edff;
+    height: 350px;
+}
+.RPpricingh h1{
+    font-size: 55px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-top: 60px;
+}
+
+.RPpricingh p{
+    padding-top: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
