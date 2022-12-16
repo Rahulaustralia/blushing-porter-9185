@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react';
 import { FaCheckCircle } from 'react-icons/fa';
 import "../styles/Pricing.css"
+import Footer from '../Components/Footer';
 
 function PriceWrapper({ children }) {
   return (
@@ -36,6 +37,7 @@ export default function Pricing() {
   <h1> Pricing </h1>
   <p> All plans include free 30-day trial. No credit card required! </p>
  </div>
+ 
     <Box py={12}>
       <VStack spacing={2} textAlign="center">
         {/* <Heading as="h1" fontSize="4xl">
@@ -453,6 +455,7 @@ export default function Pricing() {
         </PriceWrapper>
       </Stack>
     </Box>
+     <Footer />
     </>
   );
 }

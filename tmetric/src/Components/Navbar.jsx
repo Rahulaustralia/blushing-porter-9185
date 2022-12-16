@@ -51,12 +51,12 @@ export default function Navbar() {
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <Box> 
           <RouterLink to="/"> 
-          <Button>  <img src={image} alt="image" width="150px"/>   </Button>
+          <Button>  <img className='Rplogo' src={image} alt="image" width="150px"/>   </Button>
           </RouterLink>
            
           </Box>
           
-          <div>  
+          <div className='RPnavpart1'>  
           <Menu>
            <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
             Why TMetric
@@ -100,7 +100,7 @@ export default function Navbar() {
   
           </div>
           
-          <Flex alignItems={'center'} gap="15px">
+          <Flex className='RPnavlogin' alignItems={'center'} gap="15px">
           {/* <FaCartPlus size={"30"}/> */}
           {isAuthenticated && <p>Welcome:- {user.name} </p>}
           {isAuthenticated ? 

@@ -17,7 +17,7 @@ import {
 } from 'react-icons/io5';
 import { ReactElement } from 'react';
 import "../styles/HomePage.css"
-
+import Footer from "../Components/Footer"
 
 const Feature = ({ text, icon, iconBg }) => {
   return (
@@ -38,6 +38,7 @@ const Feature = ({ text, icon, iconBg }) => {
 
 export default function SplitWithImage() {
   return (
+    <> 
     <div className='RPhomemain'  maxW={'5xl'} py={12}>
       <div className='Rpc1'> 
       <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
@@ -75,6 +76,7 @@ export default function SplitWithImage() {
           <h1>Best time tracking features for <br /> your business</h1>
         </div>
     </div>
-  
+    <Footer />
+    </>
   );
 }
