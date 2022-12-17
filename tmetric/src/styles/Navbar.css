@@ -1,6 +1,6 @@
 .RPnavbar{
  width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0px;
  height: 70px;
 }
@@ -13,3 +13,16 @@
     
 }
 
+
+@media screen and (max-width: 480px) {
+    .Rplogo{
+        position: fixed;
+        width: 120px;
+        margin-left: 100px;
+    }
+    
+    .RPnavpart1{
+        display: none;
+    }
+    
+   }
