@@ -4,7 +4,6 @@ import Blog from '../Pages/Blog';
 import HomePage from '../Pages/HomePage';
 import Login from '../Pages/Login';
 import Pricing from '../Pages/Pricing';
-
 import Register from '../Pages/Register';
 import Support from '../Pages/Support';
 
