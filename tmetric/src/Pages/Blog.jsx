@@ -1,5 +1,5 @@
 import React from 'react'
-import style from "../styles/Blog.css";
+import "../styles/Blog.css";
 import BlogCard from "../Components/BlogCard";
 import Data from "../Data.json";
 import Footer  from "../Components/Footer";
@@ -7,10 +7,10 @@ import Footer  from "../Components/Footer";
 const Blog = () => {
   return (
     <div>
-         <>
+        <>
       
       <div>
-        <div className={style.blognavbar}>
+        <div className="blognavbar">
           <img
             src="https://blog.tmetric.com/content/images/size/w2000/2022/01/MicrosoftTeams-image--1-.png"
             alt=""
@@ -18,8 +18,8 @@ const Blog = () => {
         </div>
         {/* navbar completed /////////////////////////////////*/}
 
-        <div className={style.blogadpart}>
-          <div className={style.blogadpartimg}>
+        <div className="blogadpart">
+          <div className="blogadpartimg">
             <img
               src="https://blog.tmetric.com/content/images/size/w1000/2022/06/productivity-banner-2.png"
               alt=""
@@ -27,7 +27,7 @@ const Blog = () => {
           </div>
 
           <div>
-            <div className={style.blogadpartdetail}>
+            <div className="blogadpartdetail">
               <h6>PRODUCTIVITY HACKS</h6>
               <h1>
                 If You Want To Be <br /> Productive, Beware Of <br /> These 5
@@ -43,8 +43,8 @@ const Blog = () => {
               </p>
             </div>
 
-            <div className={style.blogadpartprofile}>
-              <div className={style.blogadpartprofileimg}>
+            <div className="blogadpartprofile">
+              <div className="blogadpartprofileimg">
                 <img
                   src="https://blog.tmetric.com/content/images/size/w100/2021/11/-----1.png"
                   alt=""
@@ -59,7 +59,7 @@ const Blog = () => {
 
         {/* blog deatail ends///////////////////////////////////// */}
 
-        <div className={style.blogadpartallprofilemap}>
+        <div className="blogadpartallprofilemap">
           {Data.blog.map((item) => {
             return <BlogCard key={item.id} item={item} />;
           })}

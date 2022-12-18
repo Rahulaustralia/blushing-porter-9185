@@ -2,11 +2,13 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    
 }
 
 .blognavbar {
     width: 100%;
     height: 360px;
+    margin-top: 70px;
 
 }
 
