@@ -1,5 +1,5 @@
 import React from 'react'
-import style from "../styles/Support.css";
+import "../styles/Support.css";
 import { IoMdSearch } from "react-icons/io";
 import { BsFillArrowUpRightSquareFill } from "react-icons/bs";
 import  Footer  from "../Components/Footer";
@@ -9,22 +9,22 @@ const Support = () => {
     <div>
        <>
       
-      <div className={style.supportmain}>
-        <div className={style.supportnav}>
-          <div className={style.supportheading}>
-            <h1 className={style.supportnavh1}>How can we help you?</h1>
+      <div className="supportmain">
+        <div className="supportnav">
+          <div className="supportheading">
+            <h1 className="supportnavh1">How can we help you?</h1>
           </div>
 
-          <div className={style.supportsearch}>
+          <div className="supportsearch">
             <div>
               {" "}
-              <IoMdSearch className={style.supportsearchbtn} />
+              <IoMdSearch className="supportsearchbtn" />
             </div>
 
             <div>
               {" "}
               <input
-                className={style.supportsearchinput}
+                className="supportsearchinput"
                 type="text"
                 placeholder="Enter a question, keyword,or topic to find answer "
               />
@@ -33,38 +33,38 @@ const Support = () => {
         </div>
        
 
-        <div className={style.supportvideosection}>
+        <div className="supportvideosection">
           <div>
-            <h2 className={style.supportvideosectionh2}>Quick Start Videos</h2>
+            <h2 className="supportvideosectionh2">Quick Start Videos</h2>
           </div>
 
-          <div className={style.supportvideosectionvideo}>
-            <div className={style.supportvideosectionvideo1}>
+          <div className="supportvideosectionvideo">
+            <div className="supportvideosectionvideo1">
               <img
                 src="https://i.ytimg.com/vi/jT3467I-c2M/mqdefault.jpg"
                 alt=""
               />
             </div>
-            <div className={style.supportvideosectionvideo1}>
+            <div className="supportvideosectionvideo1">
               <img
                 src="https://i.ytimg.com/vi/jT3467I-c2M/mqdefault.jpg"
                 alt=""
               />
             </div>
-            <div className={style.supportvideosectionvideo1}>
+            <div className="supportvideosectionvideo1">
               <img
                 src="https://i.ytimg.com/vi/jT3467I-c2M/mqdefault.jpg"
                 alt=""
               />
             </div>
-            <div className={style.supportvideosectionvideo1}>
+            <div className="supportvideosectionvideo1">
               <img
                 src="https://i.ytimg.com/vi/jT3467I-c2M/mqdefault.jpg"
                 alt=""
               />
             </div>
           </div>
-          <div className={style.supportvideosectioncontent}>
+          <div className="supportvideosectioncontent">
             <a
               href="https://www.youtube.com/playlist?list=PL74QEPdFcvLbliXZZ04Zm8UlGl_G6tmvL"
               target="_blank"
@@ -79,12 +79,12 @@ const Support = () => {
           </div>
         </div>
 
-        <div className={style.supportuserguidemain}>
+        <div className="supportuserguidemain">
           <div>
-            <h2 className={style.supportvideosectionh2}>User Guide</h2>
+            <h2 className="supportvideosectionh2">User Guide</h2>
           </div>
-          <div className={style.supportuserguide}>
-            <div className={style.supportuserguide1}>
+          <div className="supportuserguide">
+            <div className="supportuserguide1">
               <div>
                 <img
                   src="https://tmetric.com/media/fqmd4fox/icon-guide-getting-started.svg"
@@ -92,16 +92,16 @@ const Support = () => {
                 />
               </div>
               <div>
-                <h2 className={style.supportuserguide1h2}>Getting Started</h2>
-                <p className={style.supportuserguide1p}>
+                <h2 className="supportuserguide1h2">Getting Started</h2>
+                <p className="supportuserguide1p">
                   This section explains what a new <br />
                   TMetric user should know and do to <br />
                   quickly start tracking their work time.
                 </p>
-                <hr className={style.hr} />
+                <hr className="hr" />
               </div>
             </div>
-            <div className={style.supportuserguide1}>
+            <div className="supportuserguide1">
               <div>
                 <img
                   src="https://tmetric.com/media/pgxe2341/icon-guide-time-tracking.svg"
@@ -109,16 +109,16 @@ const Support = () => {
                 />
               </div>
               <div>
-                <h2 className={style.supportuserguide1h2}>Time Tracking</h2>
-                <p className={style.supportuserguide1p}>
+                <h2 className="supportuserguide1h2">Time Tracking</h2>
+                <p className="supportuserguide1p">
                   Learn how to manage and lock time, <br />
                   link tasks to time entries, set a required <br />
                   work schedule and permissions.
                 </p>
-                <hr className={style.hr} />
+                <hr className="hr" />
               </div>
             </div>
-            <div className={style.supportuserguide1}>
+            <div className="supportuserguide1">
               <div>
                 <img
                   src="https://tmetric.com/media/nhhdfvxt/tasks.svg"
@@ -126,16 +126,16 @@ const Support = () => {
                 />
               </div>
               <div>
-                <h2 className={style.supportuserguide1h2}>Tasks</h2>
-                <p className={style.supportuserguide1p}>
+                <h2 className="supportuserguide1h2">Tasks</h2>
+                <p className="supportuserguide1p">
                   Learn about task management - how to <br />
                   create and edit tasks, customize a task <br />
                   list, and share tasks with others.
                 </p>
-                <hr className={style.hr} />
+                <hr className="hr" />
               </div>
             </div>
-            <div className={style.supportuserguide1}>
+            <div className="supportuserguide1">
               <div>
                 <img
                   src="https://tmetric.com/media/ajnblb01/icon-guide-projects.svg"
@@ -143,18 +143,18 @@ const Support = () => {
                 />
               </div>
               <div>
-                <h2 className={style.supportuserguide1h2}>Projects</h2>
-                <p className={style.supportuserguide1p}>
+                <h2 className="supportuserguide1h2">Projects</h2>
+                <p className="supportuserguide1p">
                   This section includes information about <br />
                   creating different types of projects, <br />
                   setting up budgets, and invoicing
                   <br />
                   clients for work days.
                 </p>
-                <hr className={style.hr} />
+                <hr className="hr" />
               </div>
             </div>
-            <div className={style.supportuserguide1}>
+            <div className="supportuserguide1">
               <div>
                 <img
                   src="https://tmetric.com/media/jxsewpku/icon-guide-reports.svg"
@@ -162,16 +162,16 @@ const Support = () => {
                 />
               </div>
               <div>
-                <h2 className={style.supportuserguide1h2}>Reports</h2>
-                <p className={style.supportuserguide1p}>
+                <h2 className="supportuserguide1h2">Reports</h2>
+                <p className="supportuserguide1p">
                   General information about using <br />
                   reports in TMetric to review and <br />
                   analyze your time tracking data.
                 </p>
-                <hr className={style.hr} />
+                <hr className="hr" />
               </div>
             </div>
-            <div className={style.supportuserguide1}>
+            <div className="supportuserguide1">
               <div>
                 <img
                   src="https://tmetric.com/media/42if5ekb/icon-guide-billing-invoicing.svg"
@@ -179,16 +179,16 @@ const Support = () => {
                 />
               </div>
               <div>
-                <h2 className={style.supportuserguide1h2}>Invoices</h2>
-                <p className={style.supportuserguide1p}>
+                <h2 className="supportuserguide1h2">Invoices</h2>
+                <p className="supportuserguide1p">
                   Make invoicing painless, just go through <br />
                   a learning process described in this <br />
                   section and get paid on time.
                 </p>
-                <hr className={style.hr} />
+                <hr className="hr" />
               </div>
             </div>
-            <div className={style.supportuserguide1}>
+            <div className="supportuserguide1">
               <div>
                 <img
                   src="https://tmetric.com/media/5uzjal2u/icon-guide-time-off.svg"
@@ -196,17 +196,17 @@ const Support = () => {
                 />
               </div>
               <div>
-                <h2 className={style.supportuserguide1h2}>Time Off</h2>
-                <p className={style.supportuserguide1p}>
+                <h2 className="supportuserguide1h2">Time Off</h2>
+                <p className="supportuserguide1p">
                   Learn how to simplify employee paid <br />
                   time off and vacation tracking: set up <br />
                   time off policies and properly <br />
                   compensate days
                 </p>
-                <hr className={style.hr} />
+                <hr className="hr" />
               </div>
             </div>
-            <div className={style.supportuserguide1}>
+            <div className="supportuserguide1">
               <div>
                 <img
                   src="https://tmetric.com/media/0ssdlvqw/icon-guide-productivity-tracking.svg"
@@ -214,20 +214,20 @@ const Support = () => {
                 />
               </div>
               <div>
-                <h2 className={style.supportuserguide1h2}>
+                <h2 className="supportuserguide1h2">
                   Productivity Tracking
                 </h2>
-                <p className={style.supportuserguide1p}>
+                <p className="supportuserguide1p">
                   Here you will find everything about <br />
                   productivity tracking - what activity <br />
                   level is and where to get user activity
                   <br />
                   details.
                 </p>
-                <hr className={style.hr} />
+                <hr className="hr" />
               </div>
             </div>
-            <div className={style.supportuserguide1}>
+            <div className="supportuserguide1">
               <div>
                 <img
                   src="https://tmetric.com/media/sa1fife4/icon-guide-team-management.svg"
@@ -235,16 +235,16 @@ const Support = () => {
                 />
               </div>
               <div>
-                <h2 className={style.supportuserguide1h2}>Team Management</h2>
-                <p className={style.supportuserguide1p}>
+                <h2 className="supportuserguide1h2">Team Management</h2>
+                <p className="supportuserguide1p">
                   Learn about team management - how <br />
                   to add people to your workspace, create <br />a team, and
                   monitor and payroll its work.
                 </p>
-                <hr className={style.hr} />
+                <hr className="hr" />    
               </div>
             </div>
-            <div className={style.supportuserguide1}>
+            <div className="supportuserguide1">
               <div>
                 <img
                   src="https://tmetric.com/media/lkpdnu2f/icon-guide-workspace-management.svg"
@@ -252,18 +252,18 @@ const Support = () => {
                 />
               </div>
               <div>
-                <h2 className={style.supportuserguide1h2}>
+                <h2 className="supportuserguide1h2">
                   Workspace Management
                 </h2>
-                <p className={style.supportuserguide1p}>
+                <p className="supportuserguide1p">
                   Configure your workspace, manage <br />
                   members, learn user roles and track <br />
                   your time as a team in TMetric.
                 </p>
-                <hr className={style.hr} />
+                <hr className="hr" />
               </div>
             </div>
-            <div className={style.supportuserguide1}>
+            <div className="supportuserguide1">
               <div>
                 <img
                   src="https://tmetric.com/media/rfij2vrr/icon-guide-apps.svg"
@@ -271,16 +271,16 @@ const Support = () => {
                 />
               </div>
               <div>
-                <h2 className={style.supportuserguide1h2}>Apps</h2>
-                <p className={style.supportuserguide1p}>
+                <h2 className="supportuserguide1h2">Apps</h2>
+                <p className="supportuserguide1p">
                   This topic describes a broad range of <br />
                   TMetric apps: how to install and use <br />
                   them and the features they provide.
                 </p>
-                <hr className={style.hr} />
+                <hr className="hr" />
               </div>
             </div>
-            <div className={style.supportuserguide1}>
+            <div className="supportuserguide1">
               <div>
                 <img
                   src="https://tmetric.com/media/mpdjzi1w/icon-guide-integrations.svg"
@@ -288,17 +288,17 @@ const Support = () => {
                 />
               </div>
               <div>
-                <h2 className={style.supportuserguide1h2}>Intergation</h2>
-                <p className={style.supportuserguide1p}>
+                <h2 className="supportuserguide1h2">Intergation</h2>
+                <p className="supportuserguide1p">
                   Integrate TMetric with various time and <br />
                   project management systems to track <br />
                   time, create reports, and monitor your <br />
                   team.
                 </p>
-                <hr className={style.hr} />
+                <hr className="hr" />
               </div>
             </div>
-            <div className={style.supportuserguide1}>
+            <div className="supportuserguide1">
               <div>
                 <img
                   src="https://tmetric.com/media/iuyisza0/icon-guide-user-account.svg"
@@ -306,19 +306,19 @@ const Support = () => {
                 />
               </div>
               <div>
-                <h2 className={style.supportuserguide1h2}>
+                <h2 className="supportuserguide1h2">
                   User Account Management
                 </h2>
-                <p className={style.supportuserguide1p}>
+                <p className="supportuserguide1p">
                   Here you will find all the necessary <br />
                   information about a user account in
                   <br /> TMetric and how to manage it with
                   <br /> ease.
                 </p>
-                <hr className={style.hr} />
+                <hr className="hr" />
               </div>
             </div>
-            <div className={style.supportuserguide1}>
+            <div className="supportuserguide1">
               <div>
                 <img
                   src="https://tmetric.com/media/srnmkwja/icon-guide-subscription-billing.svg"
@@ -326,15 +326,15 @@ const Support = () => {
                 />
               </div>
               <div>
-                <h2 className={style.supportuserguide1h2}>
+                <h2 className="supportuserguide1h2">
                   Subscription & Billing
                 </h2>
-                <p className={style.supportuserguide1p}>
+                <p className="supportuserguide1p">
                   This section provides information about <br />
                   the subscription and billing process in <br />
                   TMetric to understand how it all works.
                 </p>
-                <hr className={style.hr} />
+                <hr className="hr" />
               </div>
             </div>
           </div>
@@ -344,16 +344,16 @@ const Support = () => {
 
         {/* //////////////////////////////////////////////////////////////////////////////////// */}
 
-        <div className={style.fandqmain}>
+        <div className="fandqmain">
           <div>
-            <h2 className={style.supportvideosectionh2}>
+            <h2 className="supportvideosectionh2">
               Frequently asked questions
             </h2>
           </div>
 
-          <div className={style.fandqmain1}>
-            <div className={style.fandqmain1div}>
-              <div className={style.fandqmain1divli}>
+          <div className="fandqmain1">
+            <div className="fandqmain1div">
+              <div className="fandqmain1divli">
                 <h3>Subscription & Billing</h3>
                 <ul>
                   <li>• Do you have discounts for non-profits?</li>
@@ -377,7 +377,7 @@ const Support = () => {
                 <hr />
               </div>
 
-              <div className={style.fandqmain1divli}>
+              <div className="fandqmain1divli">
                 <h3>Time Tracking</h3>
                 <ul>
                   <li>• Can I add custom notes for a time entry?</li>
@@ -400,8 +400,8 @@ const Support = () => {
             </div>
 
             {/* 2nd list */}
-            <div className={style.fandqmain1div}>
-              <div className={style.fandqmain1divli}>
+            <div className="fandqmain1div">
+              <div className="fandqmain1divli">
                 <h3>Productivity Tracking</h3>
                 <ul>
                   <li>• What data is collected in TMetric?</li>
@@ -413,7 +413,7 @@ const Support = () => {
                 <hr />
               </div>
 
-              <div className={style.fandqmain1divli}>
+              <div className="fandqmain1divli">
                 <h3>Projects</h3>
                 <ul>
                   <li>
@@ -429,7 +429,7 @@ const Support = () => {
                 <hr />
               </div>
 
-              <div className={style.fandqmain1divli}>
+              <div className="fandqmain1divli">
                 <h3>Team Management</h3>
                 <ul>
                   <li>
@@ -447,8 +447,8 @@ const Support = () => {
               </div>
             </div>
 
-            <div className={style.fandqmain1div}>
-              <div className={style.fandqmain1divli}>
+            <div className="fandqmain1div">
+              <div className="fandqmain1divli">
                 <h3>Time Off</h3>
                 <ul>
                   <li>
@@ -465,7 +465,7 @@ const Support = () => {
                 <hr />
               </div>
 
-              <div className={style.fandqmain1divli}>
+              <div className="fandqmain1divli">
                 <h3>Reporting</h3>
                 <ul>
                   <li>
@@ -487,7 +487,7 @@ const Support = () => {
                 <hr />
               </div>
 
-              <div className={style.fandqmain1divli}>
+              <div className="fandqmain1divli">
                 <h3>Tasks</h3>
                 <ul>
                   <li>• I am a workspace owner, why I don't see my tasks.</li>
@@ -506,11 +506,11 @@ const Support = () => {
 
         {/* contact us start/////////////////////////////////////////////////////////////////////////////////// */}
 
-        <div className={style.contactmain}>
-          <div className={style.contactmainh1}>
+        <div className="contactmain">
+          <div className="contactmainh1">
             <h1>There is no topic you interested in?</h1>
           </div>
-          <div className={style.contactmainh1}>
+          <div className="contactmainh1">
             <h3>
               If you didn't find what you were looking for, you can make a
               support request or email <br />
@@ -518,8 +518,8 @@ const Support = () => {
             </h3>
           </div>
 
-          <div className={style.contactbtndiv}>
-            <button className={style.contactbtn}>Contact Us</button>
+          <div className="contactbtndiv">
+            <button className="contactbtn">Contact Us</button>
           </div>
         </div>
 
