@@ -100,7 +100,7 @@ export default function Navbar() {
   
           </div>
           
-          <Flex alignItems={'center'}>
+          <Flex className='RPnavlogin' alignItems={'center'} gap="15px">
           {/* <FaCartPlus size={"30"}/> */}
           {isAuthenticated && <p>Welcome:- {user.name} </p>}
           {isAuthenticated ? 
