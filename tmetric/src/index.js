@@ -10,7 +10,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ChakraProvider>
     <BrowserRouter>
+    <Auth0Provider
+    domain="dev-2ehzfmm3wlsxe2am.us.auth0.com"
+    clientId="9BoKTNqOTzPCKS8mH2Bnr10zjN5Y3Etq"
+    redirectUri={window.location.origin}
+  > 
     <App />
+    </Auth0Provider>
     </BrowserRouter>
   </ChakraProvider>
 );
