@@ -3,7 +3,7 @@ TMetric is time tracking software operated by TMetric team, headquartered in Pra
 
 
 
-https://comforting-piroshki-33f0a7.netlify.app/support
+https://comforting-piroshki-33f0a7.netlify.app/
 
 # Tech Stack used
 
